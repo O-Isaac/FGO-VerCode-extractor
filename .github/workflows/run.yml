@@ -5,9 +5,9 @@ name: Python package
 
 on:
   push:
-    branches: [ master ]
+    branches: [ windows ]
   pull_request:
-    branches: [ master ]
+    branches: [ windows ]
   schedule:
     - cron: '30 10 * * *'
 
