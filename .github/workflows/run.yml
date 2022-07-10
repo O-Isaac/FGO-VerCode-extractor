@@ -21,7 +21,7 @@ jobs:
 
     steps:
     - name: Install Requeriments
-      run: pip install -r requirements.txt
+      run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-VerCode/windows/requirements.txt
     - uses: actions/checkout@v2
     - name: Test
       run: python3 main.py
