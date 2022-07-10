@@ -62,12 +62,6 @@ def check_app_version_on_extract():
                 }
                 json.dump(new_verCode, fw)
 
-
-def get_lastest_versions():
-    pathVersions = os.path.join(pathRoot, "versions")
-    pathExe = os.path.join(pathVersions, "versions.exe")
-    subprocess.run(pathExe)
-
 def extract_verCode():
     create_temporal_folder()
     download_apk("jp")
@@ -93,8 +87,6 @@ def check_update():
                 print("Not necesary update!")
 
 if __name__ == '__main__':
-    get_lastest_versions()
-
     if not os.path.exists(pathVerCode):
         extract_verCode()
         check_app_version_on_extract()
