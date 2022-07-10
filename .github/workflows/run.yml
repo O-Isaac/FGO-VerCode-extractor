@@ -22,6 +22,16 @@ jobs:
     steps:
     - name: Install Requeriments
       run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-VerCode/windows/requirements.txt
-    - uses: actions/checkout@v2
+
+    - name: Gettings files from Repo
+      uses: actions/checkout@v2
+    
     - name: Test
       run: python3 main.py
+
+    - name: Commit & Push Changes To Branch NA
+      uses: actions-js/push@master
+      with:
+        branch: "JP"
+        github_token: ${{ secrets.TOKEN_REPO }}
+
