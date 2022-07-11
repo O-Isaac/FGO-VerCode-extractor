@@ -5,8 +5,6 @@ on:
     branches: [ windows ]
   pull_request:
     branches: [ windows ]
-  schedule:
-    - cron: '30 10 * * *'
 
 jobs:
   build:
@@ -23,10 +21,10 @@ jobs:
     - name: Gettings files from Repo
       uses: actions/checkout@v2
     
-    - name: Test
+    - name: Execute main script
       run: python3 main.py
 
-    - name: Commit & Push Changes To Branch NA
+    - name: Commit & push changes to branch NA
       uses: actions-js/push@master
       with:
         branch: "windows"
