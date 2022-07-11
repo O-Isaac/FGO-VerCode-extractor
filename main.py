@@ -62,9 +62,10 @@ def check_app_version_on_extract():
                 }
                 json.dump(new_verCode, fw)
 
+
 def extract_verCode():
     create_temporal_folder()
-    download_apk("jp")
+    download_apk("jp") # Change depends of the region
     decompiling_apk()
     get_verCode_from_dlls()
 
@@ -74,22 +75,13 @@ def check_update():
         dataVerCode = json.load(fVerCode)
         versionVerCode = dataVerCode["appVer"]
         
-        with open(os.path.join(pathRoot, "versions.json"), "r") as fVersions:
-            dataVersions = json.load(fVersions)
-            # versionNA = dataVersions["na"]
-            versionJP = dataVersions["jp"]
 
-            if versionVerCode != versionJP:
-                print("Rebuilding verCode!")
-                extract_verCode()
-                remove_temp_directory()
-            else:
-                print("Not necesary update!")
 
 if __name__ == '__main__':
+    
     if not os.path.exists(pathVerCode):
         extract_verCode()
         check_app_version_on_extract()
-        remove_temp_directory()
+        # remove_temp_directory()
     else:
         check_update()
