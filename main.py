@@ -80,6 +80,7 @@ def check_update():
         
         if (versionVerCode != versionAtlas):
             extract_verCode()
+            check_app_version_on_extract()
             remove_temp_directory()
         else:
             print('Is not necesary update!')
@@ -87,10 +88,4 @@ def check_update():
 
 
 if __name__ == '__main__':
-
-    if not os.path.exists(pathVerCode):
-        extract_verCode()
-        check_app_version_on_extract()
-        remove_temp_directory()
-    else:
-        check_update()
+    check_update()
