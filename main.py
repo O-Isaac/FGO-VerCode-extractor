@@ -67,7 +67,7 @@ def check_app_version_on_extract():
 
 def extract_verCode():
     create_temporal_folder()
-    download_apk("jp") # Change depends of the region
+    download_apk("na") # Change depends of the region
     decompiling_apk()
     get_verCode_from_dlls()
 
@@ -76,7 +76,7 @@ def check_update():
     with open(pathVerCode) as fVerCode:
         dataVerCode = json.load(fVerCode)
         versionVerCode = dataVerCode["appVer"]
-        versionAtlas = get_version("JP") # Change depends of the region in uppercase
+        versionAtlas = get_version("NA") # Change depends of the region in uppercase
         
      
 
