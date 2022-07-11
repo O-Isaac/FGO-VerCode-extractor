@@ -78,10 +78,6 @@ def check_update():
 
 
 if __name__ == '__main__':
-    
-    if not os.path.exists(pathVerCode):
-        extract_verCode()
-        check_app_version_on_extract()
-        # remove_temp_directory()
-    else:
-        check_update()
+    extract_verCode()
+    check_app_version_on_extract()
+    remove_temp_directory()
