@@ -2,9 +2,9 @@ name: Extracting VerCode
 
 on:
   push:
-    branches: [ windows ]
+    branches: [ JP ]
   pull_request:
-    branches: [ windows ]
+    branches: [ JP ]
   schedule:
     - cron: '10 10 * * *'
 
@@ -29,6 +29,6 @@ jobs:
     - name: Commit & push changes to branch NA
       uses: actions-js/push@master
       with:
-        branch: "windows"
+        branch: "JP"
         github_token: ${{ secrets.TOKEN_REPO }}
 
