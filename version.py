@@ -94,10 +94,10 @@ def get_version(region: str) -> None:
     if region not in APP_STORE_URL:
         return None
 
-    play_store_version = get_play_store_ver(region.upper())
+    play_store_version = get_play_store_ver(region)
     if play_store_version is not None:
         return play_store_version
 
-    app_store_version = get_app_store_ver(region.upper())
+    app_store_version = get_app_store_ver(region)
     if app_store_version is not None:
         return app_store_version

@@ -76,9 +76,12 @@ def check_update():
     with open(pathVerCode) as fVerCode:
         dataVerCode = json.load(fVerCode)
         versionVerCode = dataVerCode["appVer"]
-        versionAtlas = get_version("jp") # Change depends of the region
+        versionAtlas = get_version("JP") # Change depends of the region in uppercase
         
+     
+
         if (versionVerCode != versionAtlas):
+            print("Need update!")
             extract_verCode()
             check_app_version_on_extract()
             remove_temp_directory()
