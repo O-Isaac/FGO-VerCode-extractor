@@ -3,7 +3,9 @@ import requests;
 import subprocess;
 import shutil;
 import json;
+
 from pyaxmlparser import APK;
+from version import get_version;
 
 pathRoot = os.getcwd()
 pathVerCode = os.path.join(pathRoot, "VerCode.json")
@@ -74,10 +76,21 @@ def check_update():
     with open(pathVerCode) as fVerCode:
         dataVerCode = json.load(fVerCode)
         versionVerCode = dataVerCode["appVer"]
+        versionAtlas = get_version("jp") # Change depends of the region
         
+        if (versionVerCode != versionAtlas):
+            extract_verCode()
+            remove_temp_directory()
+        else:
+            print('Is not necesary update!')
+
 
 
 if __name__ == '__main__':
-    extract_verCode()
-    check_app_version_on_extract()
-    remove_temp_directory()
+
+    if not os.path.exists(pathVerCode):
+        extract_verCode()
+        check_app_version_on_extract()
+        remove_temp_directory()
+    else:
+        check_update()

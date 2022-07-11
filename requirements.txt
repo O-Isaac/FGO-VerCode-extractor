@@ -1,2 +1,4 @@
 requests==2.27.1
 pyaxmlparser==0.3.27
+json5==0.9.8
+lxml==4.9.1
