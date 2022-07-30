@@ -1,4 +1,4 @@
-name: Extracting VerCode NA
+name: Extracting VerCode
 
 on:
   push:
