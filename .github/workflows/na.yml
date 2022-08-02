@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ NA ]
   schedule:
-    - cron: '15 10 * * *'
+    - cron: '20 10 * * *'
 
 jobs:
   build:
