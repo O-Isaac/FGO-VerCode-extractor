@@ -2,34 +2,34 @@ name: Extracting VerCode - JP
 
 on:
   push:
-    branches: [ JP ]
+    branches: [JP]
   pull_request:
-    branches: [ JP ]
+    branches: [JP]
+  repository_dispatch: # if schedule doesn't work i will trigger with cron job and remove schelude
+    types: [jp]
   schedule:
-    - cron: '15 19 * * *'
+    - cron: "15 19 * * *"
 
 jobs:
   build:
-
     runs-on: windows-latest
     strategy:
       matrix:
         python-version: [3.8]
 
     steps:
-    - name: Install Requeriments
-      run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-VerCode/windows/requirements.txt
+      - name: Install Requeriments
+        run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-VerCode/windows/requirements.txt
 
-    - name: Gettings files from Repo
-      uses: actions/checkout@v2
-    
-    - name: Execute main script
-      run: python3 main.py
+      - name: Gettings files from Repo
+        uses: actions/checkout@v2
 
-    - name: Commit & push changes to branch NA
-      uses: actions-js/push@master
-      with:
-        force: true
-        branch: "JP"
-        github_token: ${{ secrets.TOKEN_REPO }}
+      - name: Execute main script
+        run: python3 main.py
 
+      - name: Commit & push changes to branch NA
+        uses: actions-js/push@master
+        with:
+          force: true
+          branch: "JP"
+          github_token: ${{ secrets.TOKEN_REPO }}
