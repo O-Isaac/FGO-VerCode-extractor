@@ -2,34 +2,34 @@ name: Extracting VerCode - NA
 
 on:
   push:
-    branches: [ NA ]
+    branches: [NA]
   pull_request:
-    branches: [ NA ]
+    branches: [NA]
+  repository_dispatch: # if schedule doesn't work i will trigger with cron job and remove schelude
+    types: [na]
   schedule:
-    - cron: '20 10 * * *'
+    - cron: "20 19 * * *"
 
 jobs:
   build:
-
     runs-on: windows-latest
     strategy:
       matrix:
         python-version: [3.8]
 
     steps:
-    - name: Install Requeriments
-      run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-VerCode/windows/requirements.txt
+      - name: Install Requeriments
+        run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-VerCode/windows/requirements.txt
 
-    - name: Gettings files from Repo
-      uses: actions/checkout@v2
-    
-    - name: Execute main script
-      run: python3 main.py
+      - name: Gettings files from Repo
+        uses: actions/checkout@v2
 
-    - name: Commit & push changes to branch NA
-      uses: actions-js/push@master
-      with:
-        force: true
-        branch: "NA"
-        github_token: ${{ secrets.TOKEN_REPO }}
+      - name: Execute main script
+        run: python3 main.py
 
+      - name: Commit & push changes to branch NA
+        uses: actions-js/push@master
+        with:
+          force: true
+          branch: "NA"
+          github_token: ${{ secrets.TOKEN_REPO }}
