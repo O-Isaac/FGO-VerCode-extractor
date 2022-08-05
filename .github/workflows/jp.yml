@@ -5,8 +5,7 @@ on:
     branches: [JP]
   pull_request:
     branches: [JP]
-  repository_dispatch: # if schedule doesn't work i will trigger with cron job and remove schelude
-    types: [jp]
+  workflow_dispatch: # if schedule doesn't work i will trigger with cron job and remove schelude
   schedule:
     - cron: "15 19 * * *"
 
