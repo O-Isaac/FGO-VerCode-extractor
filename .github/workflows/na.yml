@@ -6,8 +6,6 @@ on:
   pull_request:
     branches: [NA]
   workflow_dispatch:
-  schedule:
-    - cron: "20 19 * * *"
 
 jobs:
   build:
