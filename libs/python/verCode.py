@@ -2,6 +2,8 @@ import json
 import os
 import re
 import config
+import sys
+
 from libs.python.update import get_version;
 
 isNotVerCode = [
@@ -16,7 +18,7 @@ def write_verCode_data():
     stringLiteral = open(os.path.join(config.temp_folder, "decrypt", "stringliteral.json"), encoding="utf8");
     json_data = json.load(stringLiteral)
 
-    print("[App] Writing verCode...")
+    print("[App] Writing verCode...", file=sys.stdout)
 
     for data in json_data:
         Value = data['value']
@@ -36,6 +38,6 @@ def write_verCode_data():
                     dataVerCode["verCode"] = Value;
 
                     json.dump(dataVerCode, file)
-                    return print("[App] VerCode exported succefully!")
+                    return print("[App] VerCode exported succefully!", file=sys.stdout)
 
             
