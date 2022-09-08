@@ -2,6 +2,7 @@ import json
 import os
 import requests
 import config
+import sys;
 
 pathRoot = os.getcwd()
 pathVerCode = os.path.join(pathRoot, "VerCode.json")
@@ -18,11 +19,11 @@ def check_update():
             versionAtlas = get_version() 
 
             if (versionVerCode != versionAtlas):
-                print("Need update!")
+                print("Need update!", file=sys.stdout)
                 return True
             else:
-                print('Is not necesary update!')
+                print('Is not necesary update!', file=sys.stdout)
                 return False
     else:
-        print('First Time!')
+        print('First Time!', file=sys.stdout)
         return True
