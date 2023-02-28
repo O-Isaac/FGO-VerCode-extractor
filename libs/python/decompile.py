@@ -15,7 +15,7 @@ def decompile_apk():
 def decrypt():
     il2cpp = os.path.join(os.getcwd(), "libs", "Il2CppDumper", "Il2CppDumper-x86.exe")
     global_metadata = os.path.join(config.temp_folder, "files", "assets", "bin", "Data", "Managed", "Metadata", "global-metadata.dat")
-    libil2cpp = os.path.join(config.temp_folder, "files", "lib", "armeabi-v7a", "libil2cpp.so")
+    libil2cpp = os.path.join(config.temp_folder, "files", "lib", "arm64-v8a", "libil2cpp.so")
     decrypt = os.path.join(config.temp_folder, "decrypt");
 
     print('[App] Decrypting Files!', file=sys.stdout)
