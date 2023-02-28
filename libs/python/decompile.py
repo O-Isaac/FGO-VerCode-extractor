@@ -18,7 +18,8 @@ def decrypt():
     decrypt = os.path.join(config.temp_folder, "decrypt");
 
     print("[App] Getting available libraries directories from apk")
-    lib_folders = os.listdir(config.temp_folder, "files", "lib")
+    lib_dir_path = os.path.join(config.temp_folder, "files", "lib")
+    lib_folders = os.listdir(lib_dir_path)
 
     print(f"[App] ArchLibs avalibles {lib_folders}")
     print(f"[App] Getting libil2cpp from {lib_folders[0]}")
