@@ -5,6 +5,8 @@ on:
     branches: [NA]
   pull_request:
     branches: [NA]
+  schedule:
+    - cron: '30 2,14 * * *'
   workflow_dispatch:
 
 jobs:
@@ -12,14 +14,14 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        python-version: [3.8]
+        python-version: [3.11]
 
     steps:
       - name: Install Requeriments
-        run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-VerCode/NA/requirements.txt
+        run: pip install -r https://raw.githubusercontent.com/xdeadboy666x/FGO-VerCode/NA/requirements.txt
 
       - name: Gettings files from Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Execute main script
         run: python3 main.py
