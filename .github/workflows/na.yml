@@ -6,7 +6,10 @@ on:
   pull_request:
     branches: [NA]
   schedule:
-    - cron: '30 1,13 * * *'
+    - cron: "16 2,13 * * *"
+    - cron: "15 1,14 * * *"
+    - cron: "15 6,18 * * *"
+    - cron: '15 7,19 * * *"
   workflow_dispatch:
 
 jobs:
