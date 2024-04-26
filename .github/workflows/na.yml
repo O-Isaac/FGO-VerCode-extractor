@@ -5,33 +5,34 @@ on:
     branches: [NA]
   pull_request:
     branches: [NA]
-  schedule:
-    - cron: "16 2,13 * * *"
-    - cron: "15 1,14 * * *"
-    - cron: "15 6,18 * * *"
-    - cron: '15 7,19 * * *"
   workflow_dispatch:
-
+  schedule:
+    - cron:'16 2,13 * * *'
+    - cron:'15 1,14 * * *'
+    - cron:'15 6,18 * * *'
+    - cron:'15 7,19 * * *'
+    
 jobs:
   build:
     runs-on: windows-latest
     strategy:
       matrix:
         python-version: [3.11]
+  
+  steps:
+    - name: Install Requirements
+      run: pip install -r https://github.com/xdeadboy666x/FGO-VerCode-extractor/raw/NA/requirements.txt
 
-    steps:
-      - name: Install Requeriments
-        run: pip install -r https://raw.githubusercontent.com/xdeadboy666x/FGO-VerCode-extractor/NA/requirements.txt
+    - name: Getting files from Repo
+      uses: actions/checkout@v4
 
-      - name: Gettings files from Repo
-        uses: actions/checkout@v4
+    - name: Execute main script
+      run: python3 main.py
 
-      - name: Execute main script
-        run: python3 main.py
-
-      - name: Commit & push changes to branch NA
-        uses: actions-js/push@master
-        with:
-          force: true
-          branch: "NA"
-          github_token: ${{ secrets.TOKEN_REPO }}
+    - name: Commit & push changes to branch JP
+      uses: actions-js/push@master
+    
+      with:   
+      force: true
+      branch: "NA"
+      github_token: ${{ secrets.TOKEN_REPO }}
