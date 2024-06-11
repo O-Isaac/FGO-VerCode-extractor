@@ -20,14 +20,10 @@ jobs:
         python-version: [3.11]
 
     steps:
-      - name: Install Requeriments
-        run: pip install -r https://raw.githubusercontent.com/xdeadboy666x/FGO-VerCode-extractor/NA/requirements.txt
-
-      - name: Gettings files from Repo
-        uses: actions/checkout@v4
-
-      - name: Execute main script
-        run: python3 main.py
+      - uses: actions/checkout@v4
+        run: |
+          pip install -r requirements.txt
+          python3 main.py
 
       - name: Commit & push changes to branch NA
         uses: actions-js/push@master
