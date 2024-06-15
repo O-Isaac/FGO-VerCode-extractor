@@ -2,14 +2,14 @@ name: Extracting VerCode - NA
 
 on:
   push:
-    branches: [NA]
+    branches: [ "NA" ]
   pull_request:
-    branches: [NA]
+    branches: [ "NA" ]
   schedule:
     - cron: "05 04 * * *"
     - cron: "05 10 * * *"
-    - cron: "05 14 * * *"
-    - cron: "50 20 * * *"
+    - cron: "05 16 * * *"
+    - cron: "50 22 * * *"
   workflow_dispatch:
 
 jobs:
@@ -22,13 +22,14 @@ jobs:
     steps:
       - name: Start 
         uses: actions/checkout@v4
+        
       - name: Check  
         run: |
           pip install -r requirements.txt
           python3 main.py
 
       - name: Commit & push changes to branch NA
-        uses: actions-js/push@master
+        uses: actions-js/push@NA
         with:
           force: true
           branch: "NA"
