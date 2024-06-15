@@ -29,7 +29,7 @@ jobs:
           python3 main.py
 
       - name: Commit & push changes to branch NA
-        uses: actions-js/push@NA
+        uses: actions-js/push@master
         with:
           force: true
           branch: "NA"
