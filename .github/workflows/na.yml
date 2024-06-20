@@ -1,10 +1,10 @@
-name: Extracting VerCode - NA
+name: Extracting VerCode - JP
 
 on:
   push:
-    branches: [NA]
+    branches: []
   pull_request:
-    branches: [NA]
+    branches: []
   workflow_dispatch:
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Install Requeriments
-        run: pip install -r https://raw.githubusercontent.com/xdeadboy666x/FGO-VerCode-extractor/NA/requirements.txt
+        run: pip install -r https://raw.githubusercontent.com/xdeadboy666x/FGO-VerCode-extractor/JP/requirements.txt
 
       - name: Gettings files from Repo
         uses: actions/checkout@v4
@@ -24,9 +24,9 @@ jobs:
       - name: Execute main script
         run: python3 main.py
 
-      - name: Commit & push changes to branch NA
+      - name: Commit & push changes to branch JP
         uses: actions-js/push@master
         with:
           force: true
-          branch: "NA"
+          branch: "JP"
           github_token: ${{ secrets.TOKEN_REPO }}
