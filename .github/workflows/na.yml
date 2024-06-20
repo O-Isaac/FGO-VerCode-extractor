@@ -1,14 +1,11 @@
 name: Extracting VerCode - NA
 
 on:
-  workflow_dispatch:
   push:
     branches: [NA]
   pull_request:
     branches: [NA]
-  schedule:
-    - cron: "15 07,19 * * *"
-    - cron: "15 13,01 * * *"
+  workflow_dispatch:
 
 jobs:
   build:
