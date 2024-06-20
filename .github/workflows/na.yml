@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Install Requeriments
-        run: pip install -r https://raw.githubusercontent.com/itscakebuffet/FGO-VerCode-extractor/NA/requirements.txtt
+        run: pip install -r https://raw.githubusercontent.com/itscakebuffet/FGO-VerCode-extractor/NA/requirements.txt
 
       - name: Gettings files from Repo
         uses: actions/checkout@v2
