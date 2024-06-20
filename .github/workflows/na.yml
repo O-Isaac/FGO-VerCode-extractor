@@ -2,14 +2,9 @@ name: Extracting VerCode - NA
 
 on:
   push:
-    branches: [ "NA" ]
+    branches: [NA]
   pull_request:
-    branches: [ "NA" ]
-  schedule:
-    - cron: "05 04 * * *"
-    - cron: "05 10 * * *"
-    - cron: "05 16 * * *"
-    - cron: "50 22 * * *"
+    branches: [NA]
   workflow_dispatch:
 
 jobs:
@@ -17,16 +12,17 @@ jobs:
     runs-on: windows-latest
     strategy:
       matrix:
-        python-version: [3.11]
+        python-version: [3.12]
 
     steps:
-      - name: Start 
+      - name: Install Requeriments
+        run: pip install -r https://raw.githubusercontent.com/O-Isaac/FGO-VerCode/NA/requirements.txt
+
+      - name: Gettings files from Repo
         uses: actions/checkout@v4
-        
-      - name: Check  
-        run: |
-          pip install -r requirements.txt
-          python3 main.py
+
+      - name: Execute main script
+        run: python3 main.py
 
       - name: Commit & push changes to branch NA
         uses: actions-js/push@master
@@ -34,4 +30,3 @@ jobs:
           force: true
           branch: "NA"
           github_token: ${{ secrets.TOKEN_REPO }}
-
