@@ -11,7 +11,7 @@ def download_latest():
     print('[App] Downloading latest apk...!', file=sys.stdout)
 
     # Create path to save file
-    apk = os.path.join(config.temp_folder, "fate.apk")
+    apk = os.path.join(config.temp_folder, config.apk_name)
 
     # Download and Save the file
     response = requests.get(config.url_apk)
