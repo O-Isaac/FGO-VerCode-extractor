@@ -37,6 +37,6 @@ def write_verCode_data():
                     dataVerCode["verCode"] = Value;
 
                     json.dump(dataVerCode, file)
-                    return logger.info("VerCode exported succefully!")
+                    return logger.info(f"VerCode {Value} exported succefully!")
 
             

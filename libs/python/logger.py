@@ -9,12 +9,3 @@ logging.basicConfig(
 )
 
 logger = logging.getLogger("VerCode (Extractor)")
-
-def log_subprocess(result):
-    if result.stdout:
-        for line in result.stdout.splitlines():
-            logger.info(line)
-    
-    if result.stderr:
-        for line in result.stderr.splitlines():
-            logger.error(line)
