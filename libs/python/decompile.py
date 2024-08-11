@@ -3,7 +3,7 @@ import os
 import subprocess;
 import config
 
-from libs.python.logger import logger, log_subprocess
+from libs.python.logger import logger
 
 # java -jar .\apktool.jar d .\fate.apk --output '.\temp\' -f
 def decompile_apk():
