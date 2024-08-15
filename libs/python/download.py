@@ -1,20 +1,21 @@
-import requests;
-import config;
-import os;
-import sys
+import os
+import httpx
+import config
+from libs.python.logger import logger
 
 def download_latest():
-    print('[App] Creating folder...', file=sys.stdout)
-    os.mkdir(config.temp_folder);
-    os.mkdir(os.path.join(config.temp_folder, "decrypt"));
+    logger.info('Creating folder...')
 
-    print('[App] Downloading latest apk...!', file=sys.stdout)
+    os.mkdir(config.temp_folder)
+    os.mkdir(os.path.join(config.temp_folder, "decrypt"))
 
-    # Create path to save file
-    apk = os.path.join(config.temp_folder, "fate.apk")
+    logger.info('Downloading latest apk...!')
+    
+    with httpx.stream("GET", config.url_apk, follow_redirects=True) as response:
+        response.raise_for_status()
 
-    # Download and Save the file
-    response = requests.get(config.url_apk)
-    open(apk, "wb").write(response.content)
+        with open(os.path.join(config.temp_folder, config.apk_name), "wb") as file:
+            for chunk in response.iter_bytes():
+                file.write(chunk)
 
-    print('[App] Apk downloaded!', file=sys.stdout)
+    logger.info('Apk downloaded!')
