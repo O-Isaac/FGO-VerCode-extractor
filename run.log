@@ -1,301 +1,296 @@
-INFO | _client | L1026 | 2024-10-04T08:01:33+0000: HTTP Request: GET https://gplay-ver.atlasacademy.workers.dev/?id=com.aniplex.fategrandorder "HTTP/1.1 200 OK"
-INFO | update | L23 | 2024-10-04T08:01:33+0000: Current installed version: 2.99.1, up-to-date with the latest available version: 2.100.0.
-INFO | download | L7 | 2024-10-04T08:01:33+0000: Creating folder...
-INFO | download | L12 | 2024-10-04T08:01:33+0000: Downloading latest apk...!
-INFO | _client | L1026 | 2024-10-04T08:01:33+0000: HTTP Request: GET https://fgo.bigcereal.com/apk/com.aniplex.fategrandorder.xapk "HTTP/1.1 302 Found"
-INFO | _client | L1026 | 2024-10-04T08:01:34+0000: HTTP Request: GET https://static.atlasacademy.io/apk/com.aniplex.fategrandorder.xapk "HTTP/1.1 200 "
-INFO | download | L21 | 2024-10-04T08:01:34+0000: Apk downloaded!
-INFO | decompile | L15 | 2024-10-04T08:01:34+0000: XAPK detected. Merging into APK files.
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 00.000 I: [MERGE] Using: APKEditor version 1.3.9, ARSCLib version 1.3.5
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 01.047 I: [MERGE] Merging ...
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:    Input: D:\a\FGO-VerCode-extractor\FGO-VerCode-extractor\temp\com.aniplex.fategrandorder.xapk
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  Output: D:\a\FGO-VerCode-extractor\FGO-VerCode-extractor\temp\com.aniplex.fategrandorder.apk
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  ---------------------------- 
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 01.047 I: [MERGE] Extracting to: D:\a\FGO-VerCode-extractor\FGO-VerCode-extractor\temp\tmp_d5f53f94
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  03.486 [MERGE] Extracting [31.902 Mb] com.aniplex.fategrandorder.apk
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  04.769 [MERGE] Extracting [34.621 Mb] config.armeabi_v7a.apk
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 04.785 I: [MERGE] Searching apk files ...
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 04.785 I: [MERGE] Found apk files: 2
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  04.785 [MERGE] Loading: com.aniplex.fategrandorder.apk
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  04.941 [MERGE] Loading: config.armeabi_v7a.apk
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 04.941 I: [MERGE] Found modules: 2
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.175 I: [MERGE] Merging: com.aniplex.fategrandorder
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.175 I: [MERGE] Added [com.aniplex.fategrandorder] classes.dex -> classes.dex
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.175 I: [MERGE] Added [com.aniplex.fategrandorder] classes2.dex -> classes2.dex
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: DebugProbesKt.bin
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.activity_activity.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.annotation_annotation-experimental.vers
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.arch.core_core-runtime.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.core_core-ktx.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.core_core.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.customview_customview.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.documentfile_documentfile.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.fragment_fragment.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.legacy_legacy-support-core-utils.versio
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.lifecycle_lifecycle-livedata-core.versi
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.lifecycle_lifecycle-livedata.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.lifecycle_lifecycle-runtime.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.lifecycle_lifecycle-viewmodel.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.loader_loader.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.localbroadcastmanager_localbroadcastman
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.print_print.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.privacysandbox.ads_ads-adservices-java.
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.privacysandbox.ads_ads-adservices.versi
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.savedstate_savedstate.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.versionedparcelable_versionedparcelable
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/androidx.viewpager_viewpager.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/com.android.games.engine.build_fingerprint
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.238 [MERGE] Added: META-INF/kotlinx_coroutines_core.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: META-INF/kotlinx_coroutines_play_services.version
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/AssetStorages/Android/AssetStorage.txt
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/FGO.acf
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/ResourceSound.acb.bytes
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/ResourceSound.awb.bytes
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/UnityServicesProjectConfiguration.json
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/bin/Data/Managed/Metadata/global-metadata.dat
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/bin/Data/Managed/Resources/System.Data.dll-resourc
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/bin/Data/Managed/Resources/System.Drawing.dll-reso
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/bin/Data/Managed/Resources/mscorlib.dll-resources.
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/bin/Data/RuntimeInitializeOnLoads.json
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/bin/Data/ScriptingAssemblies.json
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/bin/Data/boot.config
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/bin/Data/data.unity3d
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/bin/Data/unity default resources
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/bin/Data/unity_app_guid
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/footer@3x.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/tuningfork/dev_tuningfork.descriptor
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/tuningfork/dev_tuningfork_fidelityparams_1.bin
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/tuningfork/dev_tuningfork_fidelityparams_2.bin
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/tuningfork/dev_tuningfork_fidelityparams_3.bin
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: assets/tuningfork/tuningfork_settings.bin
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: billing.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: firebase-analytics.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: firebase-annotations.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: firebase-auth-interop.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: firebase-datatransport.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: firebase-encoders-json.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: firebase-encoders-proto.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: firebase-encoders.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: firebase-iid-interop.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: firebase-iid.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: firebase-measurement-connector.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: kotlin/annotation/annotation.kotlin_builtins
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: kotlin/collections/collections.kotlin_builtins
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: kotlin/coroutines/coroutines.kotlin_builtins
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: kotlin/internal/internal.kotlin_builtins
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: kotlin/kotlin.kotlin_builtins
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: kotlin/ranges/ranges.kotlin_builtins
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: kotlin/reflect/reflect.kotlin_builtins
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: messaging_event.proto
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: messaging_event_extension.proto
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: play-services-ads-identifier.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: play-services-base.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: play-services-basement.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: play-services-cloud-messaging.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: play-services-measurement-api.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: play-services-measurement-base.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: play-services-measurement-impl.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: play-services-measurement-sdk-api.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: play-services-measurement-sdk.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: play-services-measurement.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: play-services-stats.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: play-services-tasks.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/anim/io_repro_android_slide_down.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/color/common_google_signin_btn_text_dark.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/color/common_google_signin_btn_text_light.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/color/common_google_signin_btn_tint.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_icon_dark.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_icon_dark_focused.x
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_icon_dark_normal.xm
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_icon_disabled.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_icon_light.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_icon_light_focused.
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_icon_light_normal.x
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_text_dark.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_text_dark_focused.x
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_text_dark_normal.xm
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_text_disabled.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_text_light.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_text_light_focused.
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/common_google_signin_btn_text_light_normal.x
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/notification_bg.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/notification_bg_low.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/notification_icon_background.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/notification_tile_bg.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable/unity_static_splash.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/common_full_open_on_phone.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_n
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/common_google_signin_btn_icon_light_
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/common_google_signin_btn_text_dark_n
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/common_google_signin_btn_text_light_
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/googleg_disabled_color_18.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/googleg_standard_color_18.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/notification_bg_low_normal.9.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/notification_bg_normal.9.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/notification_icon.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-hdpi-v4/notify_panel_notification_icon_bg.pn
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-ldpi-v4/notification_icon.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_n
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-mdpi-v4/common_google_signin_btn_icon_light_
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-mdpi-v4/common_google_signin_btn_text_dark_n
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-mdpi-v4/common_google_signin_btn_text_light_
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-mdpi-v4/googleg_disabled_color_18.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-mdpi-v4/googleg_standard_color_18.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-mdpi-v4/notification_bg_low_normal.9.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-mdpi-v4/notification_bg_low_pressed.9.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-mdpi-v4/notification_bg_normal.9.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-mdpi-v4/notification_icon.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-mdpi-v4/notify_panel_notification_icon_bg.pn
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-nodpi-v4/io_repro_android_close.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-v21/notification_action_background.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/app_banner.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/common_full_open_on_phone.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/common_google_signin_btn_icon_light
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/common_google_signin_btn_text_light
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/googleg_disabled_color_18.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/googleg_standard_color_18.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/notification_bg_low_normal.9.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/notification_bg_normal.9.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.pn
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/notification_icon.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.p
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xxhdpi-v4/common_google_signin_btn_icon_ligh
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xxhdpi-v4/common_google_signin_btn_text_ligh
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xxhdpi-v4/googleg_disabled_color_18.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.253 [MERGE] Added: res/drawable-xxhdpi-v4/googleg_standard_color_18.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/drawable-xxhdpi-v4/notification_icon.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/drawable-xxxhdpi-v4/notification_icon.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout/basicauth_entry.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout/custom_dialog.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout/io_repro_android_activity_message_mini_popup_r
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout/io_repro_android_fragment_message_full.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout/io_repro_android_fragment_message_full_image.x
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout/io_repro_android_fragment_message_html.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout/io_repro_android_fragment_message_overlay.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout/notification_template_part_chronometer.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout/notification_template_part_time.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout-land/io_repro_android_fragment_message_full_im
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout-land/io_repro_android_fragment_message_overlay
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout-v18/io_repro_android_fragment_message_only_ima
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout-v21/notification_action.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout-v21/notification_action_tombstone.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout-v21/notification_template_custom_big.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/layout-v21/notification_template_icon_group.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-anydpi-v26/app_icon.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-anydpi-v26/app_icon_round.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-hdpi-v4/app_icon.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-hdpi-v4/app_icon_round.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-hdpi-v4/ic_launcher_background.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-hdpi-v4/ic_launcher_foreground.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-ldpi-v4/app_icon.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-ldpi-v4/app_icon_round.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-ldpi-v4/ic_launcher_background.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-ldpi-v4/ic_launcher_foreground.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-mdpi-v4/app_icon.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-mdpi-v4/app_icon_round.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-mdpi-v4/ic_launcher_background.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-mdpi-v4/ic_launcher_foreground.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-xhdpi-v4/app_icon.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-xhdpi-v4/app_icon_round.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-xhdpi-v4/ic_launcher_background.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-xhdpi-v4/ic_launcher_foreground.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-xxhdpi-v4/app_icon.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-xxhdpi-v4/app_icon_round.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-xxhdpi-v4/ic_launcher_background.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-xxhdpi-v4/ic_launcher_foreground.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-xxxhdpi-v4/app_icon.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-xxxhdpi-v4/app_icon_round.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-xxxhdpi-v4/ic_launcher_background.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/mipmap-xxxhdpi-v4/ic_launcher_foreground.png
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/raw/firebase_common_keep.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/raw/gtm_analytics
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/xml/backup.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/xml/ga_ad_services_config.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/xml/splits0.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: res/xml/unitywebview_file_provider_paths.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: transport-backend-cct.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: transport-runtime.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: stamp-cert-sha256
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.269 [MERGE] Added: AndroidManifest.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.269 I: [MERGE] Merging: config.armeabi_v7a
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: lib/armeabi-v7a/libFirebaseCppAnalytics.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: lib/armeabi-v7a/libFirebaseCppApp-11_9_0.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: lib/armeabi-v7a/libFirebaseCppDynamicLinks.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: lib/armeabi-v7a/libFirebaseCppMessaging.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: lib/armeabi-v7a/libbacktrace-native.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: lib/armeabi-v7a/libcrashpad_handler.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: lib/armeabi-v7a/libcri_ware_unity.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: lib/armeabi-v7a/libil2cpp.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: lib/armeabi-v7a/libmain.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: lib/armeabi-v7a/libnative-lib.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: lib/armeabi-v7a/libunity.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: META-INF/BNDLTOOL.SF
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: META-INF/BNDLTOOL.RSA
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.285 [MERGE] Added: META-INF/MANIFEST.MF
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.300 I: [MERGE] Sanitizing manifest ...
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.300 I: [MERGE] Removed-attribute : @0x0101064e
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.316 I: [MERGE] Removed-attribute : @0x0101064f
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.316 I: [MERGE] Removed-attribute : extractNativeLibs
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.316 I: [MERGE] Removed-element : <meta-data> name="com.android.vending.splits.required"
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.316 I: [MERGE] Removed-element : <meta-data> name="com.android.stamp.source"
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.316 I: [MERGE] Removed-element : <meta-data> name="com.android.stamp.type"
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.316 I: [MERGE] Removed-table-entry : res/xml/splits0.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.316 I: [MERGE] Removed-element : <meta-data> name="com.android.vending.splits"
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.316 I: [MERGE] Removed-element : <meta-data> name="com.android.vending.derived.apk.id"
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.332 I: [MERGE] Writing apk ...
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.347 I: [MERGE] Buffering compress changed files ...
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.457 I: [MERGE] Writing files: 219
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.472 [MERGE] Write [5.157 Kb] AndroidManifest.xml
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.707 [MERGE] Write [3.167 Mb] classes.dex
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.707 [MERGE] Write [23.21 Mb] lib/armeabi-v7a/libil2cpp.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.723 [MERGE] Write [7.535 Mb] lib/armeabi-v7a/libunity.so
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.738 [MERGE] Write [982 bytes] res/drawable-xhdpi-v4/googleg_standard_color_1
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.754 [MERGE] Write [20.7 Mb] assets/bin/Data/data.unity3d
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.754 [MERGE] Write [4.810 Mb] assets/bin/Data/Managed/Metadata/global-metadat
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000:  05.770 [MERGE] Write [61 bytes] play-services-cloud-messaging.properties
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.770 I: [MERGE] Writing signature block ...
-INFO | decompile | L23 | 2024-10-04T08:01:47+0000: 05.770 I: [MERGE] Saved to: D:\a\FGO-VerCode-extractor\FGO-VerCode-extractor\temp\com.aniplex.fategrandorder.apk
-INFO | decompile | L27 | 2024-10-04T08:01:47+0000: Decompiling apk...
-INFO | decompile | L35 | 2024-10-04T08:02:10+0000: I: Using Apktool 2.6.1 on com.aniplex.fategrandorder.apk
-INFO | decompile | L35 | 2024-10-04T08:02:10+0000: I: Loading resource table...
-INFO | decompile | L35 | 2024-10-04T08:02:10+0000: I: Decoding AndroidManifest.xml with resources...
-INFO | decompile | L35 | 2024-10-04T08:02:10+0000: I: Loading resource table from file: C:\Users\runneradmin\AppData\Local\apktool\framework\1.apk
-INFO | decompile | L35 | 2024-10-04T08:02:10+0000: I: Regular manifest package...
-INFO | decompile | L35 | 2024-10-04T08:02:10+0000: I: Decoding file-resources...
-INFO | decompile | L35 | 2024-10-04T08:02:10+0000: I: Decoding values */* XMLs...
-INFO | decompile | L35 | 2024-10-04T08:02:10+0000: I: Baksmaling classes.dex...
-INFO | decompile | L35 | 2024-10-04T08:02:10+0000: I: Baksmaling classes2.dex...
-INFO | decompile | L35 | 2024-10-04T08:02:10+0000: I: Copying assets and libs...
-INFO | decompile | L35 | 2024-10-04T08:02:10+0000: I: Copying unknown files...
-INFO | decompile | L35 | 2024-10-04T08:02:10+0000: I: Copying original files...
-INFO | decompile | L37 | 2024-10-04T08:02:10+0000: Decompile apk succesfully!
-INFO | decompile | L45 | 2024-10-04T08:02:10+0000: Getting available libraries directories from apk
-INFO | decompile | L49 | 2024-10-04T08:02:10+0000: ArchLibs avalibles ['armeabi-v7a']
-INFO | decompile | L50 | 2024-10-04T08:02:10+0000: Getting libil2cpp from armeabi-v7a
-INFO | decompile | L54 | 2024-10-04T08:02:10+0000: Decrypting Files!
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: Initializing metadata...
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: Metadata Version: 29
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: Initializing il2cpp file...
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: Applying relocations...
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: WARNING: find JNI_OnLoad
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: ERROR: This file may be protected.
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: Il2Cpp Version: 29
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: Searching...
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: Change il2cpp version to: 29.1
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: CodeRegistration : 3edf680
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: MetadataRegistration : 3f6555c
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: Dumping...
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: Done!
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: Generate struct...
-INFO | decompile | L62 | 2024-10-04T08:02:20+0000: Done!
-INFO | verCode | L21 | 2024-10-04T08:02:20+0000: Writing verCode...
-INFO | _client | L1026 | 2024-10-04T08:02:20+0000: HTTP Request: GET https://gplay-ver.atlasacademy.workers.dev/?id=com.aniplex.fategrandorder "HTTP/1.1 200 OK"
-INFO | verCode | L40 | 2024-10-04T08:02:20+0000: VerCode 3b7c40de25400340975fbb53bc9c22b98b64f99131646377723ca3b8f3b2b3e8 exported succefully!
+INFO | _client | L1026 | 2024-10-05T08:01:24+0000: HTTP Request: GET https://gplay-ver.atlasacademy.workers.dev/?id=com.aniplex.fategrandorder "HTTP/1.1 200 OK"
+INFO | update | L23 | 2024-10-05T08:01:24+0000: Current installed version: 2.100.0, up-to-date with the latest available version: 2.100.1.
+INFO | download | L7 | 2024-10-05T08:01:24+0000: Creating folder...
+INFO | download | L12 | 2024-10-05T08:01:24+0000: Downloading latest apk...!
+INFO | _client | L1026 | 2024-10-05T08:01:25+0000: HTTP Request: GET https://fgo.bigcereal.com/apk/com.aniplex.fategrandorder.xapk "HTTP/1.1 302 Found"
+INFO | _client | L1026 | 2024-10-05T08:01:25+0000: HTTP Request: GET https://static.atlasacademy.io/apk/com.aniplex.fategrandorder.xapk "HTTP/1.1 200 "
+INFO | download | L21 | 2024-10-05T08:01:26+0000: Apk downloaded!
+INFO | decompile | L15 | 2024-10-05T08:01:26+0000: XAPK detected. Merging into APK files.
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 00.000 I: [MERGE] Using: APKEditor version 1.3.9, ARSCLib version 1.3.5
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 00.110 I: [MERGE] Merging ...
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:    Input: D:\a\FGO-VerCode-extractor\FGO-VerCode-extractor\temp\com.aniplex.fategrandorder.xapk
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  Output: D:\a\FGO-VerCode-extractor\FGO-VerCode-extractor\temp\com.aniplex.fategrandorder.apk
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  ---------------------------- 
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 00.110 I: [MERGE] Extracting to: D:\a\FGO-VerCode-extractor\FGO-VerCode-extractor\temp\tmp_d5f53f94
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  00.517 [MERGE] Extracting [31.902 Mb] com.aniplex.fategrandorder.apk
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  00.736 [MERGE] Extracting [34.617 Mb] config.armeabi_v7a.apk
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 00.751 I: [MERGE] Searching apk files ...
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 00.751 I: [MERGE] Found apk files: 2
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  00.751 [MERGE] Loading: com.aniplex.fategrandorder.apk
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  00.814 [MERGE] Loading: config.armeabi_v7a.apk
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 00.829 I: [MERGE] Found modules: 2
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 00.954 I: [MERGE] Merging: com.aniplex.fategrandorder
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 00.954 I: [MERGE] Added [com.aniplex.fategrandorder] classes.dex -> classes.dex
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 00.954 I: [MERGE] Added [com.aniplex.fategrandorder] classes2.dex -> classes2.dex
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: DebugProbesKt.bin
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.activity_activity.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.annotation_annotation-experimental.vers
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.arch.core_core-runtime.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.core_core-ktx.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.core_core.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.customview_customview.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.documentfile_documentfile.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.fragment_fragment.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.legacy_legacy-support-core-utils.versio
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.lifecycle_lifecycle-livedata-core.versi
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.lifecycle_lifecycle-livedata.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.lifecycle_lifecycle-runtime.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.lifecycle_lifecycle-viewmodel.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.loader_loader.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.localbroadcastmanager_localbroadcastman
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.print_print.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.privacysandbox.ads_ads-adservices-java.
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.privacysandbox.ads_ads-adservices.versi
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.savedstate_savedstate.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.versionedparcelable_versionedparcelable
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/androidx.viewpager_viewpager.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/com.android.games.engine.build_fingerprint
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/kotlinx_coroutines_core.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: META-INF/kotlinx_coroutines_play_services.version
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/AssetStorages/Android/AssetStorage.txt
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/FGO.acf
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/ResourceSound.acb.bytes
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/ResourceSound.awb.bytes
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/UnityServicesProjectConfiguration.json
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/bin/Data/Managed/Metadata/global-metadata.dat
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/bin/Data/Managed/Resources/System.Data.dll-resourc
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/bin/Data/Managed/Resources/System.Drawing.dll-reso
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/bin/Data/Managed/Resources/mscorlib.dll-resources.
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/bin/Data/RuntimeInitializeOnLoads.json
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/bin/Data/ScriptingAssemblies.json
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/bin/Data/boot.config
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/bin/Data/data.unity3d
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/bin/Data/unity default resources
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/bin/Data/unity_app_guid
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: assets/footer@3x.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: billing.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: firebase-analytics.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: firebase-annotations.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: firebase-auth-interop.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: firebase-datatransport.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: firebase-encoders-json.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: firebase-encoders-proto.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: firebase-encoders.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: firebase-iid-interop.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: firebase-iid.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: firebase-measurement-connector.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: kotlin/annotation/annotation.kotlin_builtins
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: kotlin/collections/collections.kotlin_builtins
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: kotlin/coroutines/coroutines.kotlin_builtins
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: kotlin/internal/internal.kotlin_builtins
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: kotlin/kotlin.kotlin_builtins
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: kotlin/ranges/ranges.kotlin_builtins
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: kotlin/reflect/reflect.kotlin_builtins
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: messaging_event.proto
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: messaging_event_extension.proto
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: play-services-ads-identifier.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: play-services-base.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: play-services-basement.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: play-services-cloud-messaging.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: play-services-measurement-api.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: play-services-measurement-base.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: play-services-measurement-impl.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: play-services-measurement-sdk-api.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: play-services-measurement-sdk.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: play-services-measurement.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: play-services-stats.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: play-services-tasks.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/anim/io_repro_android_slide_down.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/color/common_google_signin_btn_text_dark.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/color/common_google_signin_btn_text_light.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/color/common_google_signin_btn_tint.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_icon_dark.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_icon_dark_focused.x
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_icon_dark_normal.xm
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_icon_disabled.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_icon_light.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_icon_light_focused.
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_icon_light_normal.x
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_text_dark.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_text_dark_focused.x
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_text_dark_normal.xm
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_text_disabled.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_text_light.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_text_light_focused.
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/common_google_signin_btn_text_light_normal.x
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/notification_bg.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.032 [MERGE] Added: res/drawable/notification_bg_low.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable/notification_icon_background.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable/notification_tile_bg.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable/unity_static_splash.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/common_full_open_on_phone.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_n
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/common_google_signin_btn_icon_light_
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/common_google_signin_btn_text_dark_n
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/common_google_signin_btn_text_light_
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/googleg_disabled_color_18.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/googleg_standard_color_18.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/notification_bg_low_normal.9.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/notification_bg_low_pressed.9.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/notification_bg_normal.9.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/notification_icon.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-hdpi-v4/notify_panel_notification_icon_bg.pn
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-ldpi-v4/notification_icon.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-mdpi-v4/common_google_signin_btn_icon_dark_n
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-mdpi-v4/common_google_signin_btn_icon_light_
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-mdpi-v4/common_google_signin_btn_text_dark_n
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-mdpi-v4/common_google_signin_btn_text_light_
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-mdpi-v4/googleg_disabled_color_18.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-mdpi-v4/googleg_standard_color_18.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-mdpi-v4/notification_bg_low_normal.9.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-mdpi-v4/notification_bg_low_pressed.9.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-mdpi-v4/notification_bg_normal.9.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-mdpi-v4/notification_icon.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-mdpi-v4/notify_panel_notification_icon_bg.pn
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-nodpi-v4/io_repro_android_close.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-v21/notification_action_background.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/app_banner.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/common_full_open_on_phone.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/common_google_signin_btn_icon_light
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/common_google_signin_btn_text_dark_
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/common_google_signin_btn_text_light
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/googleg_disabled_color_18.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/googleg_standard_color_18.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/notification_bg_low_normal.9.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/notification_bg_normal.9.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.pn
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/notification_icon.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.p
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xxhdpi-v4/common_google_signin_btn_icon_ligh
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xxhdpi-v4/common_google_signin_btn_text_dark
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xxhdpi-v4/common_google_signin_btn_text_ligh
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xxhdpi-v4/googleg_disabled_color_18.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xxhdpi-v4/googleg_standard_color_18.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xxhdpi-v4/notification_icon.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/drawable-xxxhdpi-v4/notification_icon.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout/basicauth_entry.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout/custom_dialog.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout/io_repro_android_activity_message_mini_popup_r
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout/io_repro_android_fragment_message_full.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout/io_repro_android_fragment_message_full_image.x
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout/io_repro_android_fragment_message_html.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout/io_repro_android_fragment_message_overlay.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout/notification_template_part_chronometer.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout/notification_template_part_time.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout-land/io_repro_android_fragment_message_full_im
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout-land/io_repro_android_fragment_message_overlay
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout-v18/io_repro_android_fragment_message_only_ima
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout-v21/notification_action.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout-v21/notification_action_tombstone.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout-v21/notification_template_custom_big.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/layout-v21/notification_template_icon_group.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-anydpi-v26/app_icon.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-anydpi-v26/app_icon_round.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-hdpi-v4/app_icon.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-hdpi-v4/app_icon_round.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-hdpi-v4/ic_launcher_background.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-hdpi-v4/ic_launcher_foreground.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-ldpi-v4/app_icon.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-ldpi-v4/app_icon_round.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-ldpi-v4/ic_launcher_background.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-ldpi-v4/ic_launcher_foreground.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-mdpi-v4/app_icon.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-mdpi-v4/app_icon_round.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-mdpi-v4/ic_launcher_background.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-mdpi-v4/ic_launcher_foreground.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-xhdpi-v4/app_icon.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-xhdpi-v4/app_icon_round.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-xhdpi-v4/ic_launcher_background.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-xhdpi-v4/ic_launcher_foreground.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-xxhdpi-v4/app_icon.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-xxhdpi-v4/app_icon_round.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-xxhdpi-v4/ic_launcher_background.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-xxhdpi-v4/ic_launcher_foreground.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-xxxhdpi-v4/app_icon.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-xxxhdpi-v4/app_icon_round.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-xxxhdpi-v4/ic_launcher_background.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/mipmap-xxxhdpi-v4/ic_launcher_foreground.png
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/raw/firebase_common_keep.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/raw/gtm_analytics
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/xml/backup.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/xml/ga_ad_services_config.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/xml/splits0.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: res/xml/unitywebview_file_provider_paths.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: transport-backend-cct.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: transport-runtime.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: stamp-cert-sha256
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.048 [MERGE] Added: AndroidManifest.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.048 I: [MERGE] Merging: config.armeabi_v7a
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: lib/armeabi-v7a/libFirebaseCppAnalytics.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: lib/armeabi-v7a/libFirebaseCppApp-11_9_0.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: lib/armeabi-v7a/libFirebaseCppDynamicLinks.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: lib/armeabi-v7a/libFirebaseCppMessaging.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: lib/armeabi-v7a/libbacktrace-native.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: lib/armeabi-v7a/libcrashpad_handler.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: lib/armeabi-v7a/libcri_ware_unity.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: lib/armeabi-v7a/libil2cpp.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: lib/armeabi-v7a/libmain.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: lib/armeabi-v7a/libnative-lib.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: lib/armeabi-v7a/libunity.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: META-INF/BNDLTOOL.SF
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: META-INF/BNDLTOOL.RSA
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.064 [MERGE] Added: META-INF/MANIFEST.MF
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.079 I: [MERGE] Sanitizing manifest ...
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.095 I: [MERGE] Removed-attribute : @0x0101064e
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.095 I: [MERGE] Removed-attribute : @0x0101064f
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.095 I: [MERGE] Removed-attribute : extractNativeLibs
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.095 I: [MERGE] Removed-element : <meta-data> name="com.android.vending.splits.required"
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.095 I: [MERGE] Removed-element : <meta-data> name="com.android.stamp.source"
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.095 I: [MERGE] Removed-element : <meta-data> name="com.android.stamp.type"
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.095 I: [MERGE] Removed-table-entry : res/xml/splits0.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.095 I: [MERGE] Removed-element : <meta-data> name="com.android.vending.splits"
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.095 I: [MERGE] Removed-element : <meta-data> name="com.android.vending.derived.apk.id"
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.110 I: [MERGE] Writing apk ...
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.110 I: [MERGE] Buffering compress changed files ...
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.173 I: [MERGE] Writing files: 214
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.173 [MERGE] Write [5.157 Kb] AndroidManifest.xml
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.204 [MERGE] Write [3.167 Mb] classes.dex
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.220 [MERGE] Write [23.18 Mb] lib/armeabi-v7a/libil2cpp.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.235 [MERGE] Write [7.535 Mb] lib/armeabi-v7a/libunity.so
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.235 [MERGE] Write [982 bytes] res/drawable-xhdpi-v4/googleg_standard_color_1
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.251 [MERGE] Write [20.7 Mb] assets/bin/Data/data.unity3d
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.251 [MERGE] Write [4.810 Mb] assets/bin/Data/Managed/Metadata/global-metadat
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000:  01.267 [MERGE] Write [60 bytes] play-services-measurement-sdk.properties
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.267 I: [MERGE] Writing signature block ...
+INFO | decompile | L23 | 2024-10-05T08:01:29+0000: 01.267 I: [MERGE] Saved to: D:\a\FGO-VerCode-extractor\FGO-VerCode-extractor\temp\com.aniplex.fategrandorder.apk
+INFO | decompile | L27 | 2024-10-05T08:01:29+0000: Decompiling apk...
+INFO | decompile | L35 | 2024-10-05T08:01:39+0000: I: Using Apktool 2.6.1 on com.aniplex.fategrandorder.apk
+INFO | decompile | L35 | 2024-10-05T08:01:39+0000: I: Loading resource table...
+INFO | decompile | L35 | 2024-10-05T08:01:39+0000: I: Decoding AndroidManifest.xml with resources...
+INFO | decompile | L35 | 2024-10-05T08:01:39+0000: I: Loading resource table from file: C:\Users\runneradmin\AppData\Local\apktool\framework\1.apk
+INFO | decompile | L35 | 2024-10-05T08:01:39+0000: I: Regular manifest package...
+INFO | decompile | L35 | 2024-10-05T08:01:39+0000: I: Decoding file-resources...
+INFO | decompile | L35 | 2024-10-05T08:01:39+0000: I: Decoding values */* XMLs...
+INFO | decompile | L35 | 2024-10-05T08:01:39+0000: I: Baksmaling classes.dex...
+INFO | decompile | L35 | 2024-10-05T08:01:39+0000: I: Baksmaling classes2.dex...
+INFO | decompile | L35 | 2024-10-05T08:01:39+0000: I: Copying assets and libs...
+INFO | decompile | L35 | 2024-10-05T08:01:39+0000: I: Copying unknown files...
+INFO | decompile | L35 | 2024-10-05T08:01:39+0000: I: Copying original files...
+INFO | decompile | L37 | 2024-10-05T08:01:39+0000: Decompile apk succesfully!
+INFO | decompile | L45 | 2024-10-05T08:01:39+0000: Getting available libraries directories from apk
+INFO | decompile | L49 | 2024-10-05T08:01:39+0000: ArchLibs avalibles ['armeabi-v7a']
+INFO | decompile | L50 | 2024-10-05T08:01:39+0000: Getting libil2cpp from armeabi-v7a
+INFO | decompile | L54 | 2024-10-05T08:01:39+0000: Decrypting Files!
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: Initializing metadata...
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: Metadata Version: 29
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: Initializing il2cpp file...
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: Applying relocations...
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: WARNING: find JNI_OnLoad
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: ERROR: This file may be protected.
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: Il2Cpp Version: 29
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: Searching...
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: Change il2cpp version to: 29.1
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: CodeRegistration : 3ee0060
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: MetadataRegistration : 3f65f54
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: Dumping...
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: Done!
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: Generate struct...
+INFO | decompile | L62 | 2024-10-05T08:01:48+0000: Done!
+INFO | verCode | L21 | 2024-10-05T08:01:48+0000: Writing verCode...
+INFO | _client | L1026 | 2024-10-05T08:01:48+0000: HTTP Request: GET https://gplay-ver.atlasacademy.workers.dev/?id=com.aniplex.fategrandorder "HTTP/1.1 200 OK"
+INFO | verCode | L40 | 2024-10-05T08:01:48+0000: VerCode 607d43a0c2dcc85806bffe52812f923d7991176aadd9a3e58d68132fcaa59ca8 exported succefully!
