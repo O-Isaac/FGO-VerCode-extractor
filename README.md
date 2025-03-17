@@ -8,3 +8,4 @@ https://github.com/O-Isaac/FGO-VCE
 
 # Roadmap
 - [x] Generate to app.json `app.na.json` & `app.jp.json`
+ 
