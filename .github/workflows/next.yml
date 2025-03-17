@@ -8,44 +8,32 @@ on:
     branches: [next]
 
 jobs:
-  extract:
-    runs-on: windows-latest
-    strategy:
-      matrix:
-        region: 
-          - jp
-          - na
-        include:
-         - region: na
-           game: https://fgo.bigcereal.com/apk/com.aniplex.fategrandorder.en.xapk
-           version: https://gplay-ver.atlasacademy.workers.dev/?id=com.aniplex.fategrandorder.en
-         - region: jp
-           game: https://fgo.bigcereal.com/apk/com.aniplex.fategrandorder.xapk
-           version: https://gplay-ver.atlasacademy.workers.dev/?id=com.aniplex.fategrandorder
+  jp:
+    runs-on: ubuntu-latest
     permissions:
       packages: write
       contents: write
     steps:
-      - name: Gettings files from Repo
+      - name: Checkout Repository
         uses: actions/checkout@v2
         
+      - name: Install Dependencies
+        run: sudo apt-get update && sudo apt-get install -y jq
+
       - name: Set Game Version
         run: |
-          $version = Invoke-RestMethod -Uri "${{ matrix.version }}"
-          echo "VERSION=$version" | Out-File -Append -FilePath $env:GITHUB_ENV
-          
-      - name: Compare Version with app.json
+          VERSION=$(curl -s "https://gplay-ver.atlasacademy.workers.dev/?id=com.aniplex.fategrandorder")
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Compare Version with jp.json
         run: |
-          $appVersion = (Get-Content -Path "${{ matrix.region }}.json" | ConvertFrom-Json).appVer
-          $envVersion = $env:VERSION
-          if ($appVersion -eq $envVersion) {
-            echo "Versions match! No need to update the code. ✅"
-            echo "UPDATE=false" | Out-File -Append -FilePath $env:GITHUB_ENV  # Establece UPDATE como false
-          } else {
-            echo "Versions don't match. Please update the code. 🔄"
-            echo "UPDATE=true" | Out-File -Append -FilePath $env:GITHUB_ENV  # Establece UPDATE como true
-          }
-          
+          APP_VERSION=$(jq -r '.appVer' "jp.json")
+          if [ "$APP_VERSION" == "$VERSION" ]; then
+              echo "UPDATE=false" >> $GITHUB_ENV
+          else
+              echo "UPDATE=true" >> $GITHUB_ENV
+          fi
+
       - name: Set up JDK
         if: env.UPDATE == 'true'
         uses: actions/setup-java@v4
@@ -55,47 +43,84 @@ jobs:
           
       - name: Download Edit Tools
         if: env.UPDATE == 'true'
-        run: |
-          Invoke-WebRequest -Uri "https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.10.0.jar" -OutFile "apktool.jar"
-          Invoke-WebRequest -Uri "https://github.com/REAndroid/APKEditor/releases/download/V1.4.1/APKEditor-1.4.1.jar" -OutFile "apkeditor.jar"
-          Invoke-WebRequest -Uri "https://github.com/O-Isaac/FGO-VCE/releases/latest/download/FGO-VCE-1.0-SNAPSHOT-jar-with-dependencies.jar" -OutFile "fgo-vce.jar"
-      
-      - name: Download Game apk
+        run: wget -O fgo-vce.jar "https://github.com/O-Isaac/FGO-VCE/releases/download/v1.0.5-beta/FGO-VCE-1.0-SNAPSHOT-jar-with-dependencies.jar"
+
+      - name: Download Game APK
         if: env.UPDATE == 'true'
-        run: |
-          mkdir apk
-          Invoke-WebRequest -Uri "${{ matrix.game }}" -OutFile "apk\fate.xapk"
-      
-      - name: Merge XAPK into apk
-        if: env.UPDATE == 'true'
-        run: |
-          java -jar apkeditor.jar m -i apk/fate.xapk -o apk/fate.apk
-          rm apk/fate.xapk
+        run: wget -O fate.xapk "https://fgo.bigcereal.com/apk/com.aniplex.fategrandorder.xapk"
      
-      - name: Decompiling apk
+      - name: Extract verCode from APK
         if: env.UPDATE == 'true'
-        run: java -jar apktool.jar d apk/fate.apk --output files -f
-     
-      - name: Get verCode from apk
-        if: env.UPDATE == 'true'
-        run: |
-          java -jar fgo-vce.jar -g files/assets/bin/Data/Managed/Metadata/global-metadata.dat -av ${{ env.VERSION }} -o ${{ matrix.region }}.json
+        run: java -jar fgo-vce.jar -av ${{ env.VERSION }} -o jp.json -xa fate.xapk
       
-      - name: Set current date
+      - name: Set Current Date
         if: env.UPDATE == 'true'
-        run:  |
-          $date = Get-Date -Format 'yyyy-MM-ddTHH:mm:ssZ'
-          echo "DATE=$date" >> $env:GITHUB_ENV
-      
+        run: echo "DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")" >> $GITHUB_ENV
+
       - name: Upload verCode
         if: env.UPDATE == 'true'
         uses: EndBug/add-and-commit@v9
         with:
           pull: '--rebase --autostash'
-          add: '${{ matrix.region }}.json'
+          add: 'jp.json'
           default_author: github_actions
-          message: |
-            '✨ Update for ${{ matrix.region }} - Commit on ${{ env.DATE }} 🚀'
+          message: '✨ Update for JP - Commit on ${{ env.DATE }} 🚀'
 
+  na:
+    needs: jp
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
+      - name: Install Dependencies
+        run: sudo apt-get update && sudo apt-get install -y jq
 
+      - name: Set Game Version
+        run: |
+          VERSION=$(curl -s "https://gplay-ver.atlasacademy.workers.dev/?id=com.aniplex.fategrandorder.en")
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Compare Version with na.json
+        run: |
+          APP_VERSION=$(jq -r '.appVer' "na.json")
+          if [ "$APP_VERSION" == "$VERSION" ]; then
+              echo "UPDATE=false" >> $GITHUB_ENV
+          else
+              echo "UPDATE=true" >> $GITHUB_ENV
+          fi
+
+      - name: Set up JDK
+        if: env.UPDATE == 'true'
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          
+      - name: Download Edit Tools
+        if: env.UPDATE == 'true'
+        run: wget -O fgo-vce.jar "https://github.com/O-Isaac/FGO-VCE/releases/download/v1.0.5-beta/FGO-VCE-1.0-SNAPSHOT-jar-with-dependencies.jar"
+
+      - name: Download Game APK
+        if: env.UPDATE == 'true'
+        run: wget -O fate.xapk "https://fgo.bigcereal.com/apk/com.aniplex.fategrandorder.en.xapk"
+     
+      - name: Extract verCode from APK
+        if: env.UPDATE == 'true'
+        run: java -jar fgo-vce.jar -av ${{ env.VERSION }} -o na.json -xa fate.xapk
+      
+      - name: Set Current Date
+        if: env.UPDATE == 'true'
+        run: echo "DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")" >> $GITHUB_ENV
+
+      - name: Upload verCode
+        if: env.UPDATE == 'true'
+        uses: EndBug/add-and-commit@v9
+        with:
+          pull: '--rebase --autostash'
+          add: 'na.json'
+          default_author: github_actions
+          message: '✨ Update for NA - Commit on ${{ env.DATE }} 🚀'
