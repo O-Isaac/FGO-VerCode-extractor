@@ -43,7 +43,7 @@ jobs:
           
       - name: Download Edit Tools
         if: env.UPDATE == 'true'
-        run: wget -O fgo-vce.jar "https://github.com/O-Isaac/FGO-VCE/releases/download/v1.0.5-beta/FGO-VCE-1.0-SNAPSHOT-jar-with-dependencies.jar"
+        run: wget -O fgo-vce.jar "https://github.com/O-Isaac/FGO-VCE/releases/download/v1.0.51-beta/FGO-VCE-1.0-SNAPSHOT-jar-with-dependencies.jar"
 
       - name: Download Game APK
         if: env.UPDATE == 'true'
