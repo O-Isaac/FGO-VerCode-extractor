@@ -47,7 +47,7 @@ jobs:
 
       - name: Download Game APK
         if: env.UPDATE == 'true'
-        run: wget -O fate.xapk "https://fgo.bigcereal.com/apk/com.aniplex.fategrandorder.xapk"
+        run: wget -O fate.xapk "https://fgo.bigcereal.com/apk/com.aniplex.fategrandorder.${{ env.VERSION }}.xapk"
      
       - name: Extract verCode from APK
         if: env.UPDATE == 'true'
@@ -106,7 +106,7 @@ jobs:
 
       - name: Download Game APK
         if: env.UPDATE == 'true'
-        run: wget -O fate.xapk "https://fgo.bigcereal.com/apk/com.aniplex.fategrandorder.en.xapk"
+        run: wget -O fate.xapk "https://fgo.bigcereal.com/apk/com.aniplex.fategrandorder.en.${{ env.VERSION }}.xapk"
      
       - name: Extract verCode from APK
         if: env.UPDATE == 'true'
